@@ -1,0 +1,74 @@
+.row{
+    background-color:rgb(27, 26, 36);
+    padding: 10px 0px 10px 20px;
+}
+h1{
+    color: whitesmoke;
+}
+.col-sm-10{
+    margin-top: 10px;
+}
+.col-sm-2{
+    padding: 11px 75px;
+}
+.btn-outline-primary{
+    border: none;
+}
+.fp{
+    color: blue;
+    font-size: 12px;
+    float: right;
+}
+#login, #signup{
+    width: 100%;
+    padding: 10px 0;
+}
+.modal-body{
+    background-color:white;
+}
+.modal-header{
+    background-color:rgb(27, 26, 36);
+    color: white;
+}
+.modal-footer{
+    background-color:rgb(27, 26, 36);
+    color: white;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.fb{
+    width: 48%;
+    margin: 1%;
+    background-color: rgb(37, 37, 224);
+    color: whitesmoke;
+    opacity: 0.8;
+}
+.fb:hover{
+opacity: 1;
+}
+.gp{
+    width: 48%;
+    margin: 1%;
+    background-color: rgb(238, 30, 30);
+    color: whitesmoke;
+    opacity: 0.8;
+}
+.gp:hover{
+opacity: 1;
+}
+.form-group span:hover, .modal-footer span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+input.ng-invalid{
+    border-left: 5px solid red;
+}
+input.ng-valid{
+    border-left: 5px solid green;
+}
+button:hover, .point:hover{
+    cursor: pointer;
+}

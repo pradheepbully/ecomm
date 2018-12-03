@@ -1,0 +1,99 @@
+.image{
+    
+    height: 380px;
+    background-size: cover;
+    animation-name: test1;
+    animation-duration: 20s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;   
+}
+
+
+.inputgroup{
+    padding: 143px 400px;
+    
+}
+.formcontrol{
+    width: 460px;
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+
+   
+}
+.btn-default {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    padding: 14px ;
+    background-color:rgb(27, 26, 36);
+    color: whitesmoke;
+    border: none;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+button:hover{
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+@-webkit-keyframes test1{
+    
+    0% {
+        background-image: url(\..\clement-m-585800-unsplash.jpg);
+        opacity: 1;
+        background-size: cover;
+        }
+    10%{
+        background-image: url(\..\kasarin-naipongprasit-462271-unsplash.jpg);
+        opacity: 1;
+        background-size: cover;
+    }
+    20%{
+        background-image: url(\..\Expert.jpg);
+        opacity: 1;
+        background-size: cover;
+    }
+    30%{
+        background-image: url(\..\714788.jpg);
+        opacity: 1;
+        background-size: cover;
+    }
+    
+    40%{
+        background-image: url(\..\rawpixel-741689-unsplash.jpg);
+        opacity: 1;
+        background-size: cover;
+    }
+    50%{
+        background-image: url(\..\manage-01.jpg);
+        background-size: cover;
+        opacity: 1;
+    }
+    60%{
+        background-image: url(\..\air_conditioning_installation.jpg);
+        opacity: 1;
+        background-size: cover;
+    }
+    70%{
+        background-image: url(\..\CWS_133-Glossworkz-Autowash-Car-wash-soap.jpg);
+        opacity: 1;
+        background-size: cover;
+    }
+    80% {
+        background-image: url(\..\emergency-plumber.jpg);
+        opacity: 1;
+        background-size: cover;
+    }
+    90%{
+        background-image: url(\..\guide-find-home-cleaning-service-main.jpg);
+        opacity: 1;
+        background-size: cover;
+    }
+    100% {
+        background-image: url(\..\davids-kokainis-674247-unsplash.jpg);
+        opacity: 1;
+        background-size: cover;
+        
+    }
+}
