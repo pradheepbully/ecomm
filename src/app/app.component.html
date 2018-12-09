@@ -90,18 +90,18 @@
           </div>
           <div class="form-group">
             <label for="email">Email ID</label>
-            <input type="text" id="email" class="form-control" placeholder="Enter Email ID" #emailid formControlName="emailid">
-            <div class="alert-danger" *ngIf="signUpData.controls['emailid'].hasError('required') && signUpData.controls['emailid'].touched">
+            <input type="text" id="email" class="form-control" placeholder="Enter Email ID" #email formControlName="email">
+            <div class="alert-danger" *ngIf="signUpData.controls['email'].hasError('required') && signUpData.controls['email'].touched">
                 Please Enter Email ID
               </div>
           </div>
           <div class="form-group">
-            <label for="phoneno"></label>
-            <input type="text" id="phoneno" class="form-control" placeholder="Enter Phone Number" #phone formControlName="phone">
-            <div class="alert-danger" *ngIf="signUpData.controls['phone'].hasError('required') && signUpData.controls['phone'].touched">
+            <label for="phoneno">Phone No</label>
+            <input type="text" id="phoneno" class="form-control" placeholder="Enter Phone Number" #phone formControlName="password">
+            <div class="alert-danger" *ngIf="signUpData.controls['password'].hasError('required') && signUpData.controls['password'].touched">
                 Please Enter Phone Number
               </div>
-              <div class="alert-danger" *ngIf="signUpData.controls['phone'].hasError('minlength') || signUpData.controls['phone'].hasError('maxlength')">
+              <div class="alert-danger" *ngIf="signUpData.controls['password'].hasError('minlength') || signUpData.controls['password'].hasError('maxlength')">
                   Please Enter Valid Phone Number
                 </div>
           </div>
@@ -115,4 +115,19 @@
       </form>
     </ng-template>
 </div>
+<input type="text" class="form-control" (keyup.enter)="createPost(title)" #title>
+
+<ul class="list-group">
+  <li class="list-group-item">{{detail}} </li>
+</ul>
+
+<ul class="list-group">
+  <li *ngFor = "let post of posts"  class="list-group-item">{{post.body}}</li>
+</ul>
+
 <app-banner></app-banner>
+
+<div class="container">
+
+<app-view></app-view>
+</div>
