@@ -8,23 +8,23 @@ import {HttpClient} from "@angular/common/http"
 })
 export class ViewComponent implements OnInit {
 
-  constructor(private http: HttpClient) {
-    http.get("https://api.github.com/users")
-    .subscribe(response=>{
-      //console.log(response);
-    });
-   }
+  // constructor(private http: HttpClient) {
+  //   http.get("https://api.github.com/users")
+  //   .subscribe(response=>{
+  //     //console.log(response);
+  //   });
+  //  }
 
   ngOnInit() {
   }
-username: string = "";
-response:any;
-  search(){
-    this.http.get("https://api.github.com/users/"+this.username)
-      .subscribe(response => {
-        this.response = response;
-      });
+// username: string = "";
+// response:any;
+//   search(){
+//     this.http.get("https://api.github.com/users/"+this.username)
+//       .subscribe(response => {
+//         this.response = response;
+//       });
 
-  }
+//   }
 
 }

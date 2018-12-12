@@ -5,12 +5,38 @@
 h1{
     color: whitesmoke;
 }
-.col-sm-10{
+.btngroup{
+    margin:14px 0 0px 500px;
+    width: 400px;
+    
+}
+.greet{
+margin: 0 0 0 0;
+
+min-width: 210px;
+padding: 8px 0 0 0;
+text-align: center;
+float: left;
+}
+.btntoggle{
+    margin: -36px 0 0 0;
+    padding: 0 0 0 200px;
+    float: right;
+    width: 340px; 
+}
+.logo{
+    margin: 7px 150px 0 40px;
+}
+.loginBtn{
+    margin: 0 0 0 227px;
+}
+
+/* .col-sm-10{
     margin-top: 10px;
 }
 .col-sm-2{
     padding: 11px 75px;
-}
+} */
 .btn-outline-primary{
     border: none;
 }
