@@ -12,6 +12,10 @@ import { HttpModule } from '@angular/http';
 import { ViewComponent } from './view/view.component';
 import { HttpClientModule } from '@angular/common/http';
 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MaterialModule } from './material';
+import { DealOfTheDayComponent } from './deal-of-the-day/deal-of-the-day.component';
+
 
 
 @NgModule({
@@ -19,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     BannerComponent,
     FooterComponent,
-    ViewComponent
+    ViewComponent,
+    DealOfTheDayComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +34,9 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     HttpModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

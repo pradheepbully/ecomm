@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { FormBuilder,FormGroup, Validators, AbstractControl } from '@angular/forms';
 import { Http } from '@angular/http';
+import { MatSnackBar } from '@angular/material';
 
 
 
@@ -19,7 +20,7 @@ export class AppComponent implements OnInit {
 login:any;
 
 
-  constructor(private modalService: NgbModal, private form: FormBuilder, private http:Http) {}
+  constructor(private modalService: NgbModal, private form: FormBuilder, private http:Http, private snackBar:MatSnackBar) {}
 
  
   openLoginPage(loginpage) {
@@ -72,7 +73,9 @@ onLogin(data){
   .subscribe(response=>{
     let res = response.json();
     console.log(res.responseMessage);
-    alert(res.responseMessage);
+    this.snackBar.open(res.responseMessage,'', {
+      duration:1000
+    });
     if(res.responseMessage=="Login Success"){
     this.modalService.dismissAll();
     this.flag=false;
@@ -108,8 +111,10 @@ this.http.post(url,data)
 .subscribe(response=>{
   let res = response.json();
   console.log(res.responseMessage);
-  alert(res.responseMessage);
-
+  
+  this.snackBar.open(res.responseMessage,'', {
+    duration:1000
+  });
   this.modalService.dismissAll();
   this.signUpData.reset();
   this.modalService.open(this.login, { centered: true });
