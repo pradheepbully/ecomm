@@ -18,6 +18,8 @@
     <button class="btn btn-outline-primary mb-2 mr-2" *ngIf=!flag (click)="onLogout()">Logout</button>
   </div>
 </div>
+</div>
+
 
   <ng-template #loginpage let-modal>
     <form [formGroup]="loginData" (ngSubmit)="onLogin(loginData.value)">
@@ -157,7 +159,7 @@
         </div>
       </form>
     </ng-template>
-</div>
+
 
 
 <app-banner></app-banner>

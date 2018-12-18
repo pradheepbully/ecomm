@@ -12,7 +12,7 @@ export class DealOfTheDayComponent implements OnInit {
   allOffers:any;
 images:any[];
   constructor(private http:Http) {
-    http.get("http://api.jayaramtech.com/morningdeals/flipkart/getdeals")
+    http.get("http://api.pivoxlabs.in/morningdeals/flipkart/getdeals")
     .subscribe(response =>{
       
       this.allOffers = response.json();
