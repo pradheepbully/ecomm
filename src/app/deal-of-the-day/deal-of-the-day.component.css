@@ -27,3 +27,30 @@ border-radius: 0.25em;
   
   cursor: pointer;
 }
+
+.image-view{
+  
+  height: 206px;
+}
+
+.inner-content{
+  
+  justify-content: center;
+ 
+}
+.flexBox{
+  display: flex;
+  flex-basis: 247px;
+  height: 300.34px;
+}
+.text{ 
+font-size: 15px;
+text-align: center;
+width: 200px;
+}
+
+.progress-spinner{
+
+  margin: 80px 600px;
+}
+

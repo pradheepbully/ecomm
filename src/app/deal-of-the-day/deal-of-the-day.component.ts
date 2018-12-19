@@ -11,10 +11,15 @@ export class DealOfTheDayComponent implements OnInit {
   allProducts:any[];
   allOffers:any;
 images:any[];
+mode = "indeterminate";
+progress:boolean = true;
+
+isCollapse:boolean = false;
+
   constructor(private http:Http) {
     http.get("http://api.pivoxlabs.in/morningdeals/flipkart/getdeals")
     .subscribe(response =>{
-      
+      if(response){this.progress = false;}
       this.allOffers = response.json();
       this.allProducts = this.allOffers.allOffersList;
       

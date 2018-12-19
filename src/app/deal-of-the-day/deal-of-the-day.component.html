@@ -50,21 +50,33 @@
 
 <mat-grid-list cols="5" rowHeight="3:4" class="main-content"  gutterSize="15px">
     <h3><span style="color: red">Deals</span>  Of The Day</h3>
+    <!-- <button class="btn btn-outline-primary" (click)="isCollapse=!isCollapse">View All</button> -->
     
-    <mat-grid-tile  *ngFor="let product of allProducts" class="content">  
-  <div *ngFor="let image of product.imageUrls" class="inner-content">
-        <mat-card *ngIf = "image.resolutionType == 'low'">
+    <!-- <div *ngIf="isCollapse"> -->
+    
+    <div class="progress-spinner" *ngIf="progress">
+    <mat-spinner [mode]="mode"></mat-spinner>
+  </div>    
+    
+  <mat-grid-tile  *ngFor="let product of allProducts" class="content">  
+  <div *ngFor="let image of product.imageUrls" class="flexBox">
+        <div *ngIf = "image.resolutionType == 'low'"  class="inner-content">
+          
       <div class="image-view">
-      <img src={{image.url}} alt="">
-    </div>
+      <img src={{image.url}} alt="" (click)="open(product.url)">
+      </div>
+  
       <div class="text">
       <div>  <b> <a href="#" (click)="open(product.url)">{{product.name}}</a> </b></div>
       <div> {{product.title}}</div>
       <div>{{product.description}}</div>
       </div>
-        </mat-card>
+    
     </div>
+    </div>
+  
   </mat-grid-tile>
+<!-- </div> -->
   </mat-grid-list>
 <!-- 
   <p>Default pagination:</p>
