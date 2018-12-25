@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialModule } from './material';
 import { DealOfTheDayComponent } from './deal-of-the-day/deal-of-the-day.component';
+import { InterceptorModule } from './interceptor/interceptor.module';
 
 
 
@@ -36,7 +37,8 @@ import { DealOfTheDayComponent } from './deal-of-the-day/deal-of-the-day.compone
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    InterceptorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
