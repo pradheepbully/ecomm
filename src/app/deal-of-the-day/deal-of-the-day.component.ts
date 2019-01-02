@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
 
+
 @Component({
   selector: 'app-deal-of-the-day',
   templateUrl: './deal-of-the-day.component.html',
@@ -13,8 +14,8 @@ export class DealOfTheDayComponent implements OnInit {
 images:any[];
 mode = "indeterminate";
 progress:boolean = true;
-
 isCollapse:boolean = false;
+
 
   constructor(private http:Http) {
     http.get("http://api.pivoxlabs.in/morningdeals/flipkart/getdeals")
@@ -22,16 +23,14 @@ isCollapse:boolean = false;
       if(response){this.progress = false;}
       this.allOffers = response.json();
       this.allProducts = this.allOffers.allOffersList;
-      
-      
-
     });
    }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
+
   open(url){
     window.open(url,'_blank');
   }
 
+  
 }

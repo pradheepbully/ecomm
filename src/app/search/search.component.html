@@ -1,0 +1,26 @@
+
+
+<mat-grid-list cols="5" rowHeight="3:4" class="main-content"  gutterSize="15px">
+    <h3  (click)="filterM()">Search Results</h3>
+       
+  <mat-grid-tile  *ngFor="let product of filterProducts" class="content">
+<div class="flexBox">
+      <div class="inner-content">
+
+  <div class="image-view">
+      <img src="{{product.productBaseInfoV1.imageUrls['200x200']}}" alt=""  (click)="open(product.productBaseInfoV1.productUrl)">
+  </div>
+  
+  <div class="text">
+      <div class="wrap"><b><a href="#" (click)="open(product.productBaseInfoV1.productUrl)">{{product.productBaseInfoV1.title}}</a></b></div>
+      <div style="color:red"> <strong> &#8377;<span style="text-decoration-line: line-through">{{product.productBaseInfoV1.flipkartSellingPrice.amount}}</span></strong></div>
+  </div>
+       
+  
+
+  </div>
+</div>
+  
+  </mat-grid-tile>
+
+  </mat-grid-list>

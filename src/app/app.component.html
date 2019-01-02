@@ -1,8 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="row">
   <div class="logo">
-    <h1 class="point">
-      Deadly<span style="color: red">Cheap</span> 
+    <h1 class="point"  routerLink="">
+     Deadly<span style="color: red">Cheap</span> 
     </h1>
   </div>
 
@@ -167,8 +167,11 @@
 
 
 <div class="container1">
-    <app-deal-of-the-day></app-deal-of-the-day>
+  <!-- <app-search *ngIf="toggle"></app-search>
+    <app-deal-of-the-day></app-deal-of-the-day> -->
 <!-- <app-view></app-view> -->
+
+<router-outlet></router-outlet>
 </div>
 <br>
 <br>

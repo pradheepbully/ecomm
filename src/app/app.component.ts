@@ -3,6 +3,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { FormBuilder,FormGroup, Validators, AbstractControl } from '@angular/forms';
 import { Http } from '@angular/http';
 import { MatSnackBar } from '@angular/material';
+import { FilterDealsService } from './filter-deals.service';
 
 
 
@@ -20,7 +21,9 @@ export class AppComponent implements OnInit {
 login:any;
 
 
-  constructor(private modalService: NgbModal, private form: FormBuilder, private http:Http, private snackBar:MatSnackBar) {}
+  constructor(private modalService: NgbModal, private form: FormBuilder, private http:Http, private snackBar:MatSnackBar,private filter:FilterDealsService) {
+  
+  }
 
  
   openLoginPage(loginpage) {
@@ -32,8 +35,11 @@ this.login=loginpage;
     this.modalService.dismissAll();
     this.modalService.open(signuppage, {centered:true});
   }
+
   
 ngOnInit(){
+
+
   this.loginData=this.form.group({
     username:['', [Validators.minLength(4),Validators.required]],
     password:['',[Validators.required, Validators.minLength(8)]]
@@ -50,6 +56,8 @@ ngOnInit(){
    });
 
 }
+
+
 
 
 // passwordMismatch(c: AbstractControl): { invalid: boolean } {

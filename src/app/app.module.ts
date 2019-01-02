@@ -16,6 +16,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialModule } from './material';
 import { DealOfTheDayComponent } from './deal-of-the-day/deal-of-the-day.component';
 import { InterceptorModule } from './interceptor/interceptor.module';
+import { FilterDealsService } from './filter-deals.service';
+import { SearchComponent } from './search/search.component';
 
 
 
@@ -25,7 +27,8 @@ import { InterceptorModule } from './interceptor/interceptor.module';
     BannerComponent,
     FooterComponent,
     ViewComponent,
-    DealOfTheDayComponent
+    DealOfTheDayComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +43,7 @@ import { InterceptorModule } from './interceptor/interceptor.module';
     MaterialModule,
     InterceptorModule
   ],
-  providers: [],
+  providers: [FilterDealsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
