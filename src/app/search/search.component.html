@@ -1,9 +1,9 @@
-
+<div class="container1">
 
 <mat-grid-list cols="5" rowHeight="3:4" class="main-content"  gutterSize="15px">
     <h3  (click)="filterM()">Search Results</h3>
        
-  <mat-grid-tile  *ngFor="let product of filterProducts" class="content">
+  <mat-grid-tile  *ngFor="let product of items" class="content">
 <div class="flexBox">
       <div class="inner-content">
 
@@ -24,3 +24,4 @@
   </mat-grid-tile>
 
   </mat-grid-list>
+</div>

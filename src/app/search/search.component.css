@@ -14,6 +14,7 @@
 background-color:white;
 border-radius: 0.12em;
 
+
 }
 .content{
   
@@ -34,6 +35,7 @@ border: none;
 .image-view{
   
   height: 206px;
+  margin: 0px 0px 0px 17%;
 }
 
 .inner-content{
@@ -61,3 +63,6 @@ width: 200px;
 flex-wrap: nowrap;
 } */
 
+.container1{
+  margin: 1% 1%;
+}
