@@ -34,17 +34,24 @@ border: none;
 .image-view{
   
   height: 206px;
+  
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
 }
 
 .inner-content{
   
-  justify-content: center;
+ 
  
 }
 .flexBox{
   display: flex;
   flex-basis: 247px;
   height: 300.34px;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
 }
 .text{ 
 font-size: 15px;

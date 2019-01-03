@@ -21,11 +21,11 @@ export class SearchComponent implements OnInit {
 this.filter.cast.subscribe(items => this.items = items);
   }
 
-   filterM(){
-     this.filterProducts=this.filter.productArray;
-    console.log("This is from constructor: "+this.items);
-    console.log(this.items);
-}
+//    filterM(){
+//      this.filterProducts=this.filter.productArray;
+//     console.log("This is from constructor: "+this.items);
+//     console.log(this.items);
+// }
   
   open(url){
     window.open(url,'_blank');

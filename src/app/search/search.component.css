@@ -14,7 +14,6 @@
 background-color:white;
 border-radius: 0.12em;
 
-
 }
 .content{
   
@@ -35,34 +34,71 @@ border: none;
 .image-view{
   
   height: 206px;
-  margin: 0px 0px 0px 17%;
+  
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
 }
 
 .inner-content{
   
-  justify-content: center;
+  
  
+}
+.wrap a{
+  color:rgb(50, 50, 255);
+}
+.wrap a:hover{
+  text-decoration:underline; 
 }
 .flexBox{
   display: flex;
-  flex-basis: 247px;
-  height: 300.34px;
+justify-content: center; /* align horizontal */
+align-items: center; /* align vertical */
+  
 }
 .text{ 
 font-size: 15px;
-text-align: center;
+
 width: 200px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
 }
 
 .progress-spinner{
 
   margin: 80px 600px;
 }
-
 /* .wrap{
 flex-wrap: nowrap;
 } */
 
 .container1{
   margin: 1% 1%;
+}
+.specialPrice{
+  color: green;
+  font-size: 22px;
+  font-weight: 600;
+}
+.sellingPrice{
+  text-decoration-line: line-through;
+  color: red;
+  opacity: 0.7;
+}
+.brandName{
+  font-weight: 100;
+}
+.discountPercentage{
+  color:black;
+  opacity: 0.8;
+  font-weight: 200;
+
+}
+.offers{
+  font-size: 12px;
+  font-weight: 100;
+  white-space: normal;
+  color: green;
 }

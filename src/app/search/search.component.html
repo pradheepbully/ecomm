@@ -1,7 +1,7 @@
 <div class="container1">
 
-<mat-grid-list cols="5" rowHeight="3:4" class="main-content"  gutterSize="15px">
-    <h3  (click)="filterM()">Search Results</h3>
+<mat-grid-list cols="5" rowHeight="3:4" class="main-content"  gutterSize="10px">
+    <h3>Search Results</h3>
        
   <mat-grid-tile  *ngFor="let product of items" class="content">
 <div class="flexBox">
@@ -12,8 +12,10 @@
   </div>
   
   <div class="text">
-      <div class="wrap"><b><a href="#" (click)="open(product.productBaseInfoV1.productUrl)">{{product.productBaseInfoV1.title}}</a></b></div>
-      <div style="color:red"> <strong> &#8377;<span style="text-decoration-line: line-through">{{product.productBaseInfoV1.flipkartSellingPrice.amount}}</span></strong></div>
+      <div class="wrap"> <b> <a data-toggle="tooltip" title="{{product.productBaseInfoV1.title}}" (click)="open(product.productBaseInfoV1.productUrl)">{{product.productBaseInfoV1.title}}</a></b></div>
+      <div class="brandName">{{product.productBaseInfoV1.productBrand}}</div>
+      <div><span class="specialPrice"> &#8377;{{product.productBaseInfoV1.flipkartSpecialPrice.amount}}</span> &nbsp;  <span class="sellingPrice">&#8377;{{product.productBaseInfoV1.flipkartSellingPrice.amount}}</span> &nbsp; <span class="discountPercentage">{{product.productBaseInfoV1.discountPercentage}}% off</span></div>
+      <div class="offers">Offers {{product.productBaseInfoV1.offers}}</div>
   </div>
        
   
