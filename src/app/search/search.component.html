@@ -1,11 +1,16 @@
 <div class="container1">
 
 <mat-grid-list cols="5" rowHeight="3:4" class="main-content"  gutterSize="10px">
-    <h3>Search Results</h3>
+    <h3>Search results {{prod}} </h3>
+
+    <div class="progress-spinner" *ngIf="progress">
+        <mat-spinner mode="indeterminate"></mat-spinner>
+      </div>
        
   <mat-grid-tile  *ngFor="let product of items" class="content">
 <div class="flexBox">
       <div class="inner-content">
+          
 
   <div class="image-view">
       <img src="{{product.productBaseInfoV1.imageUrls['200x200']}}" alt=""  (click)="open(product.productBaseInfoV1.productUrl)">
@@ -15,7 +20,7 @@
       <div class="wrap"> <b> <a data-toggle="tooltip" title="{{product.productBaseInfoV1.title}}" (click)="open(product.productBaseInfoV1.productUrl)">{{product.productBaseInfoV1.title}}</a></b></div>
       <div class="brandName">{{product.productBaseInfoV1.productBrand}}</div>
       <div><span class="specialPrice"> &#8377;{{product.productBaseInfoV1.flipkartSpecialPrice.amount}}</span> &nbsp;  <span class="sellingPrice">&#8377;{{product.productBaseInfoV1.flipkartSellingPrice.amount}}</span> &nbsp; <span class="discountPercentage">{{product.productBaseInfoV1.discountPercentage}}% off</span></div>
-      <div class="offers">Offers {{product.productBaseInfoV1.offers}}</div>
+      <div class="offers" data-toggle="tooltip" title="{{product.productBaseInfoV1.offers}}">Offers {{product.productBaseInfoV1.offers}}</div>
   </div>
        
   
@@ -25,5 +30,7 @@
   
   </mat-grid-tile>
 
+
   </mat-grid-list>
+  
 </div>

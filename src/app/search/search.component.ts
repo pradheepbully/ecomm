@@ -12,13 +12,21 @@ export class SearchComponent implements OnInit {
 
   filterProducts:any[];
   items:any;
-  
+  prod:String;
+  progress:boolean = true; 
   constructor(private filter:FilterDealsService,private http:Http) {
     
    }
 
   ngOnInit() {
-this.filter.cast.subscribe(items => this.items = items);
+    
+this.filter.cast.subscribe(items =>{
+  if(items){this.progress = false}
+  this.items = items;
+} ); 
+
+this.filter.cast1.subscribe(prod => this.prod = prod);
+
   }
 
 //    filterM(){

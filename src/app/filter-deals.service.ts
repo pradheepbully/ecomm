@@ -15,12 +15,14 @@ export class FilterDealsService {
 
   private items = new BehaviorSubject<Object>(this.productArray);
   cast = this.items.asObservable(); 
+  private prod = new BehaviorSubject<String>("");
+  cast1 = this.prod.asObservable();
 
 
   constructor(private http:Http) { }
   
   searchConfig(value){
-    
+    this.prod.next(`for ${value}`);
       this.http.get(`http://api.pivoxlabs.in/morningdeals/search/${value}`)
     .subscribe(response=>{
      

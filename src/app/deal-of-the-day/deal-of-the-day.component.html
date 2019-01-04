@@ -6,7 +6,7 @@
     <!-- <div *ngIf="isCollapse"> -->
     
     <div class="progress-spinner" *ngIf="progress">
-    <mat-spinner [mode]="mode"></mat-spinner>
+    <mat-spinner  mode="indeterminate"></mat-spinner>
   </div>    
     
   <mat-grid-tile  *ngFor="let product of allProducts" class="content">  

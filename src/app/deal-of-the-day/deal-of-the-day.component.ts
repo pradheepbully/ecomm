@@ -12,7 +12,7 @@ export class DealOfTheDayComponent implements OnInit {
   allProducts:any[];
   allOffers:any;
 images:any[];
-mode = "indeterminate";
+
 progress:boolean = true;
 isCollapse:boolean = false;
 
