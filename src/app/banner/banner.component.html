@@ -4,10 +4,10 @@
     <div class="searchPanel">
         <div class="inputField">
 
-         <input type="text" class="form-control" placeholder="Search for products, brands and more" #input (keyup.enter)="search(input.value)">
+         <input type="text" class="form-control textBox" placeholder="Search for products, brands and more" #input (keyup.enter)="search(input.value)">
         </div> 
         <div class="buttonField">
-         <button class="btn btn-default" type="submit" (click)="search(input.value)" routerLink='results'> <strong>Search</strong>  </button>
+         <button class="btn btn-default buttonBox" type="submit" (click)="search(input.value)" routerLink='results'> <strong>Search</strong>  </button>
       </div>
     </div>
   </div>

@@ -11,12 +11,34 @@
 }
 h1{
     color: whitesmoke;
+
+}
+.point{
+    font-size: 3vw;
 }
 .btngroup{
     margin:1% 0 0 36%;
-    width: 30%;
+    width: 30%;    
+}
+.loginBtn{
+    margin: 0 0 0 62%;
     
-    
+}
+.btn-responsive{
+    font-size: 1vw;
+}
+.btntoggle{
+    margin: -9% 0 0 0;
+    padding: 0 0 0 58%;
+    float: right;
+    width: 85%; 
+}
+@media (max-width:600px){
+    .btn-responsive {
+      
+        
+        
+      }
 }
 .container1{
     margin: 1% 1%;
@@ -30,18 +52,11 @@ padding: 2% 0 0 0;
 text-align: center;
 float: left;
 }
-.btntoggle{
-    margin: -9% 0 0 0;
-    padding: 0 0 0 58%;
-    float: right;
-    width: 85%; 
-}
+
 .logo{
     margin: 0 11% 0 3%;
 }
-.loginBtn{
-    margin: 0 0 0 62%;
-}
+
 
 /* .col-sm-10{
     margin-top: 10px;

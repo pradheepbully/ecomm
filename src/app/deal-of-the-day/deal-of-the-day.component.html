@@ -1,10 +1,10 @@
 
-<mat-grid-list cols="5" rowHeight="3:4" class="main-content"  gutterSize="10px">
-    <h3><span style="color: red">Deals</span>  Of The Day</h3>
+<mat-grid-list [cols]="breakpoint" rowHeight="3:4" (window:resize)="onResize($event)" class="main-content"  gutterSize="10px">
+    <h3 class="dealsFont"><span style="color: red">Deals</span>  Of The Day</h3>
     <!-- <button class="btn btn-outline-primary" (click)="isCollapse=!isCollapse">View All</button> -->
     
     <!-- <div *ngIf="isCollapse"> -->
-    
+      <!-- cols="5" rowHeight="3:4" class="main-content" -->
     <div class="progress-spinner" *ngIf="progress">
     <mat-spinner  mode="indeterminate"></mat-spinner>
   </div>    
@@ -30,8 +30,46 @@
 <!-- </div> -->
   </mat-grid-list>
 
-
+<div class="banner">
+  <div class="centerme">Center me plz</div>
+</div>
  
+<!-- <div class="gridcontainer">
+  <div class="gridtile" *ngFor="let product of allProducts">1</div>
+</div> -->
 
+<div class="container" style="background-color:red;color: white">
+    <div class="row">
+      <div class="col-sm-2" style="background-color:violet">
+        One of three columns
+      </div>
+      <div class="col-sm" style="background-color:turquoise">
+        One of three columns
+      </div>
+      <div class="col-sm" style="background-color:yellowgreen">
+        One of three columns
+      </div>
+    </div>
+  </div>
 
- 
+  <div class="container" style="background-color:black;color: white">
+      <div class="row">
+        <div class="col-sm" style="background-color:lightseagreen">
+          1 of 2
+        </div>
+        <div class="col-sm" style="background-color:green">
+          2 of 2
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm" style="background-color:blue">
+          1 of 3
+        </div>
+        <div class="col-sm" style="background-color:maroon">
+          2 of 3
+        </div>
+        <div class="col-sm" style="background-color:lightblue">
+          3 of 3
+        </div>
+      </div>
+    </div>

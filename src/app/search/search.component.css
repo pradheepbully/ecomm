@@ -3,6 +3,9 @@
     color:black;
 
   }
+  .searchFont{
+    font-size: 2vw;
+  }
 .main-content{
   
   display: flex;

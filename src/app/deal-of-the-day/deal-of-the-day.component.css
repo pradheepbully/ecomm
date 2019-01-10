@@ -1,4 +1,6 @@
-
+.dealsFont{
+  font-size:2vw;
+}
   h3{
     color:black;
 
@@ -68,3 +70,38 @@ width: 200px;
 flex-wrap: nowrap;
 } */
 
+.banner{
+  height: 480px;
+  background-color: yellow;
+  max-width: 700px;
+  margin: 40px auto;
+display: flex;
+}
+.centerme{
+font-size: 50px;
+margin:auto;
+}
+
+.gridcontainer{
+height: auto;
+max-width: 1000px;
+margin: 40px auto;
+background-color: silver;
+}
+.gridtile{
+height: 100px;
+background-color: brown;
+max-width: 150px;
+margin:10px 10px;
+
+
+}
+
+.container2{
+margin: 40px auto;
+max-width: 700px;
+
+}
+.row{
+  height: 100px;
+}

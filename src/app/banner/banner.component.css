@@ -1,6 +1,6 @@
 .image{
     
-     /* height: 380px; */
+     /* height: 380px;  */
     
     
     display: flex;
@@ -20,9 +20,15 @@
     position: relative;
     margin: 12% 30%;
     opacity: 0.9;
+flex-wrap: wrap;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+
+    
 }
 .searchPanel:hover{
     opacity: 1;
+    
 }
 .inputField{
 flex: 5;
@@ -34,7 +40,6 @@ border: none;
     flex: 1;
     border: none;
     margin-left: 2%;
-
 
 }
 /*  
@@ -54,8 +59,8 @@ border: none;
 
 }
  .btn-default {
-    /* border-bottom-left-radius: 0;
-    border-top-left-radius: 0; */
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
     
     padding: 9.8px;
     background-color:rgb(27, 26, 36);
@@ -64,7 +69,7 @@ border: none;
     opacity: 0.9;
      border-radius: 0; 
      letter-spacing: 1px; 
-     
+      
 }
 button:hover{
     opacity: 1;
@@ -139,4 +144,20 @@ button:hover{
 
 .container1{
     margin: 1% 1%;
+}
+
+@media (max-width:640px){
+    .image{
+        
+    }
+.form-control{
+
+
+
+}
+.btn-default{
+
+    
+
+}
 }

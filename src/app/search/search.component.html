@@ -1,7 +1,8 @@
 <div class="container1">
 
-<mat-grid-list cols="5" rowHeight="3:4" class="main-content"  gutterSize="10px">
-    <h3>Search results {{prod}} </h3>
+<mat-grid-list  [cols]="breakpoint" rowHeight="3:4" (window:resize)="onResize($event)" class="main-content" gutterSize="10px">
+        <!-- cols="5" rowHeight="3:4" class="main-content"  -->
+    <h3 class="searchFont">Search results {{prod}} </h3>
 
     <div class="progress-spinner" *ngIf="progress">
         <mat-spinner mode="indeterminate"></mat-spinner>
