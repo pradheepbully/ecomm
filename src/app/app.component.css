@@ -1,7 +1,7 @@
 
 .row{
     background-color:rgb(27, 26, 36);
-    padding: 0 0 0 3%;
+    padding: 0 0 0 0;
     display: flex;
     margin:0;
     
@@ -17,22 +17,83 @@ h1{
     font-size: 3vw;
 }
 .btngroup{
-    margin:1% 0 0 36%;
-    width: 30%;    
+    margin:1% 0 0 0;
+    /* width: 30%;     */
 }
 .loginBtn{
-    margin: 0 0 0 62%;
+    margin: 0 0 0 0%;
     
 }
 .btn-responsive{
     font-size: 1vw;
 }
 .btntoggle{
-    margin: -9% 0 0 0;
-    padding: 0 0 0 58%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0%;
     float: right;
     width: 85%; 
 }
+.search{
+    margin: 1% 0 0 5%;
+    width: 44%;
+}
+.inputsearch{
+    width: 94%;
+    padding: 2% 3%;
+    border-radius: 2px;
+    font-size: 1.2vw;
+    border: none;
+
+}
+.icon{
+    margin: 9px 0px 0px 9px;
+    position: absolute;
+    font-size: 2vw;
+}
+mat-icon:hover{
+color:red;
+cursor: pointer;
+}
+.nav{
+    color: whitesmoke;
+    width: 65%;
+}
+.nav ul,.navbar ul{
+    list-style: none;
+    display: inline-flex;
+    margin: 0;
+}
+.nav ul li{
+    
+    padding: 16px 20px 0 0;
+    font-size: 1.2vw;
+    font-weight: 500; 
+    opacity: 0.8;   
+}
+.nav ul li:hover{
+    
+    cursor: pointer;
+    opacity: 1;
+}
+.navbar{
+    background-color: whitesmoke;
+    color: rgb(22, 21, 26);
+}
+.navbar ul li{
+    
+    padding: 0px 33px 2px 0px;
+    font-size: 1vw;
+    font-weight: 700;
+    font-variant-caps: all-small-caps;    
+}
+.navbar ul li:hover{
+    color: red;
+    cursor: pointer;
+}
+.mat-raised-button{
+    font-weight: bold;
+   }
+
 @media (max-width:600px){
     .btn-responsive {
       
@@ -54,7 +115,7 @@ float: left;
 }
 
 .logo{
-    margin: 0 11% 0 3%;
+    margin: 0 3% 0 3%;
 }
 
 
@@ -125,4 +186,6 @@ input.ng-valid{
 button:hover, .point:hover{
     cursor: pointer;
 }
+
+
 

@@ -2,9 +2,9 @@ import {MatButtonModule, MatCheckboxModule, MatCardModule, MatSnackBarModule} fr
 import { NgModule } from '@angular/core';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
-
+import {MatIconModule} from '@angular/material/icon';
 @NgModule({
-  imports: [MatButtonModule, MatCheckboxModule,MatCardModule,MatSnackBarModule,MatGridListModule,MatProgressSpinnerModule],
-  exports: [MatButtonModule, MatCheckboxModule,MatCardModule,MatSnackBarModule,MatGridListModule,MatProgressSpinnerModule],
+  imports: [MatIconModule,MatButtonModule, MatCheckboxModule,MatCardModule,MatSnackBarModule,MatGridListModule,MatProgressSpinnerModule],
+  exports: [MatIconModule,MatButtonModule, MatCheckboxModule,MatCardModule,MatSnackBarModule,MatGridListModule,MatProgressSpinnerModule],
 })
 export class MaterialModule { }

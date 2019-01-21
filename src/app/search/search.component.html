@@ -19,8 +19,20 @@
   
   <div class="text">
       <div class="wrap"> <b> <a data-toggle="tooltip" title="{{product.productBaseInfoV1.title}}" (click)="open(product.productBaseInfoV1.productUrl)">{{product.productBaseInfoV1.title}}</a></b></div>
-      <div class="brandName">{{product.productBaseInfoV1.productBrand}}</div>
-      <div><span class="specialPrice"> &#8377;{{product.productBaseInfoV1.flipkartSpecialPrice.amount}}</span> &nbsp;  <span class="sellingPrice">&#8377;{{product.productBaseInfoV1.flipkartSellingPrice.amount}}</span> &nbsp; <span class="discountPercentage">{{product.productBaseInfoV1.discountPercentage}}% off</span></div>
+       <div class="brandName">{{product.productBaseInfoV1.productBrand}}</div>
+       <div>
+           <span class="specialPrice">
+                &#8377;{{product.productBaseInfoV1.flipkartSpecialPrice?.amount}}
+            </span>
+             &nbsp;
+               <span class="sellingPrice">
+                   &#8377;{{product.productBaseInfoV1.flipkartSellingPrice?.amount}}
+                </span>
+                 &nbsp;
+                  <span class="discountPercentage">
+                      {{product.productBaseInfoV1.discountPercentage}}% off
+                    </span>
+                </div>
       <div class="offers" data-toggle="tooltip" title="{{product.productBaseInfoV1.offers}}">Offers {{product.productBaseInfoV1.offers}}</div>
   </div>
        

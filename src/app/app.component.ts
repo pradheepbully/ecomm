@@ -57,6 +57,11 @@ ngOnInit(){
 
 }
 
+search(value){
+  console.log(value);
+  this.filter.searchConfig(value);
+}
+
 
 
 

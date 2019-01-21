@@ -5,13 +5,26 @@
      Deadly<span style="color: red">Cheap</span> 
     </h1>
   </div>
+  <div class="nav">
+    <ul>
+      <li>Deals</li>
+      <li>Stores</li>
+      <li>Forums</li>
+      <li>Deal&nbsp;Alerts</li>
+      <li>Blog</li>
+    </ul>
+
+    <div class="search">
+      <input type="text" class="inputsearch" placeholder="Search deals, coupons & stores" #inputval (keyup.enter)="search(inputval.value)">
+      <mat-icon class="icon" (click)="search(inputval.value)" routerLink='results'>search</mat-icon></div>
+   </div>
 
   <div class="btngroup">
-  <div class="greet" *ngIf=!flag>
+  <!-- <div class="greet" *ngIf=!flag>
     <h6 style="color: chartreuse">Hi,&nbsp;{{userName}}</h6>
-  </div>
+  </div> -->
   <div class="loginBtn">
-    <button class="btn btn-outline-primary btn-responsive mb-2 mr-2" (click)="openLoginPage(loginpage)" *ngIf=flag>Login/Sign Up</button>
+    <button mat-raised-button  (click)="openLoginPage(loginpage)" *ngIf=flag>Login/Sign Up</button><!--  <button class="btn btn-outline-primary btn-responsive mb-2 mr-2" (click)="openLoginPage(loginpage)" *ngIf=flag>Login/Sign Up</button> -->
   </div>
   <div class="btntoggle" >
     
@@ -20,6 +33,25 @@
 </div>
 </div>
 
+<div class="navbar">
+  <ul>
+    <li>Top&nbsp;Coupons</li>
+    <li>Grocery</li>
+    <li>Video&nbsp;Games</li>
+    <li>TV</li>
+    <li>Computers</li>
+    <li>Credit&nbsp;Cards</li>
+    <li>Home</li>
+    <li>Apparel</li>
+    <li>Tech</li>
+    <li>Cameras</li>
+    <li>Auto</li>
+    <li>Health&nbsp;&&nbsp;Beauty</li>
+    <li>Children</li>
+    <li>Entertainment</li>
+    <li>Travel</li>
+  </ul>
+</div>
 
   <ng-template #loginpage let-modal>
     <form [formGroup]="loginData" (ngSubmit)="onLogin(loginData.value)">
@@ -166,13 +198,13 @@
     <router-outlet></router-outlet>
 
 
-<div class="container1">
-  <!-- <app-search *ngIf="toggle"></app-search>
-    <app-deal-of-the-day></app-deal-of-the-day> -->
-<!-- <app-view></app-view> -->
+<!-- <div class="container1">
+  <app-search *ngIf="toggle"></app-search>
+    <app-deal-of-the-day></app-deal-of-the-day>
+ <app-view></app-view>
 
 
-</div>
+</div> -->
 <br>
 <br>
 <app-footer></app-footer>
