@@ -1,6 +1,6 @@
-<div class="container1">
+<div class="container">
 
-<mat-grid-list  [cols]="breakpoint" rowHeight="3:4" (window:resize)="onResize($event)" class="main-content" gutterSize="10px">
+<mat-grid-list  [cols]="breakpoint" rowHeight="3:4" (window:resize)="onResize($event)" class="main-content" gutterSize="5px">
         <!-- cols="5" rowHeight="3:4" class="main-content"  -->
     <h3 class="searchFont">Search results {{prod}} </h3>
 
@@ -33,7 +33,7 @@
                       {{product.productBaseInfoV1.discountPercentage}}% off
                     </span>
                 </div>
-      <div class="offers" data-toggle="tooltip" title="{{product.productBaseInfoV1.offers}}">Offers {{product.productBaseInfoV1.offers}}</div>
+      <!-- <div class="offers" data-toggle="tooltip" title="{{product.productBaseInfoV1.offers}}">Offers {{product.productBaseInfoV1.offers}}</div> -->
   </div>
        
   

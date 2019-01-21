@@ -76,7 +76,7 @@ cursor: pointer;
     opacity: 1;
 }
 .navbar{
-    background-color: whitesmoke;
+    background-color: white;
     color: rgb(22, 21, 26);
 }
 .navbar ul li{
@@ -187,5 +187,7 @@ button:hover, .point:hover{
     cursor: pointer;
 }
 
-
+.container2{
+margin: 3% 0;
+}
 
