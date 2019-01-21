@@ -4,7 +4,8 @@
 
   }
   .searchFont{
-    font-size: 2vw;
+    font-size: 1.5vw;
+    
   }
 .main-content{
   
@@ -70,7 +71,7 @@ text-overflow: ellipsis;
 
 .progress-spinner{
 
-  margin: 80px 600px;
+  margin: 100px 500px;
 }
 /* .wrap{
 flex-wrap: nowrap;
