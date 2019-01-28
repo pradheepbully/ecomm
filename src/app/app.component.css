@@ -1,14 +1,14 @@
 
-.row{
+.row1{
     background-color:rgb(27, 26, 36);
     padding: 0 0 0 0;
     display: flex;
     margin:0;
     
-}
-.row:hover{
+} 
+ .row1:hover{
     box-shadow: 0 2px 150px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
-}
+} 
 h1{
     color: whitesmoke;
 
@@ -43,6 +43,7 @@ h1{
     border-radius: 2px;
     font-size: 1.2vw;
     border: none;
+    color: black;
 
 }
 .icon{
