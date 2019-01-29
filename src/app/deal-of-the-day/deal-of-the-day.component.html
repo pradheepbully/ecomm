@@ -16,9 +16,14 @@
         </div>
     
         <div class="text">
-        <div>  <b> <a href="#" (click)="open(product.url)">{{product.name}}</a> </b></div>
-        <div> {{product.title}}</div>
-        <div>{{product.description}}</div>
+        <div>  <b> <a href="#" title="{{product.name}}" (click)="open(product.url)">{{product.name}}</a> </b></div>
+        <!-- <div> {{product.title}}</div> -->
+        <!-- <div>{{product.description}}</div> -->
+        </div>
+        <div class="detailsBtn">
+          <button class="btn btn-default viewdetails" (click)="open(product.url)">
+            View Details
+          </button>
         </div>
       
       </div>

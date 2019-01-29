@@ -63,6 +63,7 @@ cursor: pointer;
     list-style: none;
     display: inline-flex;
     margin: 0;
+    padding: 0;
 }
 .nav ul li{
     
@@ -81,6 +82,26 @@ cursor: pointer;
     color: rgb(22, 21, 26);
     width: 100%;
     
+}
+@media (max-width:1166px){
+    /* .navigationbar{
+     display:none;   
+    }
+    
+    .loginBtn{
+        display: none;
+    } */
+    .inputsearch{
+        width:84%;
+    }
+    .nav ul li{
+        padding: 5px 22px 0 0 ;
+        margin: 0 0 0 8px;
+    }
+    .search{
+        width: 100%;
+        margin: 0px 0px 6px 6px;
+    }
 }
 .navigationbar ul{
     width: 92%;
