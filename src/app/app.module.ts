@@ -19,6 +19,8 @@ import { InterceptorModule } from './interceptor/interceptor.module';
 import { FilterDealsService } from './filter-deals.service';
 import { SearchComponent } from './search/search.component';
 
+import { NgxPaginationModule } from 'ngx-pagination';
+
 
 
 @NgModule({
@@ -41,7 +43,8 @@ import { SearchComponent } from './search/search.component';
     FormsModule,
     BrowserAnimationsModule,
     MaterialModule,
-    InterceptorModule
+    InterceptorModule,
+    NgxPaginationModule
   ],
   providers: [FilterDealsService],
   bootstrap: [AppComponent]
