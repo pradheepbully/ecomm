@@ -38,18 +38,23 @@ h1{
     width: 44%;
 }
 .inputsearch{
-    width: 94%;
-    padding: 2% 3%;
-    border-radius: 2px;
+    width: 87%;
+    padding: 7.3px 12px 6px 12px;
+    border-radius: 0px;
     font-size: 1.2vw;
     border: none;
     color: black;
 
 }
+
 .icon{
-    margin: 9px 0px 0px 9px;
-    position: absolute;
-    font-size: 2vw;
+    padding: 4px 5px;
+    /* margin: 0px 0 5px 0; */
+    position: relative;
+    top: 1.7px;
+    background-color: white;
+    border: none;
+    border-left: 1px solid #bbb4b4;
 }
 mat-icon:hover{
 color:red;

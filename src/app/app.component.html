@@ -17,7 +17,8 @@
 
     <div class="search">
       <input type="text" class="inputsearch" placeholder="Search deals, coupons & stores" #inputval (keyup.enter)="search(inputval.value)">
-      <mat-icon class="icon" (click)="search(inputval.value)" routerLink='results'>search</mat-icon></div>
+     <button class="icon"> <mat-icon (click)="search(inputval.value)" routerLink='results'>search</mat-icon></button>
+    </div>
    </div>
 
   <div class="btngroup">
@@ -29,7 +30,7 @@
   </div>
   <div class="btntoggle" >
     
-    <button class="btn-responsive" mat-raised-button  *ngIf=!flag (click)="onLogout()">Logout</button>
+    <button class="btn btn-primary btn-responsive mb-2 mr-2" *ngIf=!flag (click)="onLogout()">Logout</button>
   </div>
 </div>
 </div>

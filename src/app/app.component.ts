@@ -4,6 +4,7 @@ import { FormBuilder,FormGroup, Validators, AbstractControl } from '@angular/for
 import { Http } from '@angular/http';
 import { MatSnackBar } from '@angular/material';
 import { FilterDealsService } from './filter-deals.service';
+import { Router } from '@angular/router';
 
 
 
@@ -21,7 +22,7 @@ export class AppComponent implements OnInit {
 login:any;
 
 
-  constructor(private modalService: NgbModal, private form: FormBuilder, private http:Http, private snackBar:MatSnackBar,private filter:FilterDealsService) {
+  constructor(private modalService: NgbModal, private form: FormBuilder, private http:Http, private snackBar:MatSnackBar,private filter:FilterDealsService,private router:Router) {
   
   }
 
@@ -59,7 +60,11 @@ ngOnInit(){
 
 search(value){
   console.log(value);
+ 
   this.filter.searchConfig(value);
+  this.router.navigateByUrl('/results');
+ 
+
 }
 
 
